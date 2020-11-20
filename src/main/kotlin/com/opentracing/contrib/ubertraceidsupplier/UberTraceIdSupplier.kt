@@ -32,6 +32,6 @@ class UberTraceIdSupplier(private val tracer: Tracer) {
         /**
          * Ensure that the trace ID is not url encoded
          */
-        fun getTraceId() = collector["uber-trace-id"]?.let { URLDecoder.decode(it, StandardCharsets.UTF_8) }
+        fun getTraceId() = collector["uber-trace-id"]?.let { URLDecoder.decode(it, StandardCharsets.UTF_8.toString()) }
     }
 }
