@@ -9,6 +9,19 @@ This library simplifies accessing the Uber trace ID.
 
 ## Usage
 
+To install the library add: 
+ 
+```gradle
+   repositories { 
+        maven { url "https://jitpack.io" }
+   }
+   dependencies {
+         compile 'com.github.kyleellman:uber-trace-id-supplier:1.0.1'
+   }
+``` 
+
+To use:
+
 ```kt
 
 // Instantiate the supplier
